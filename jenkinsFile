@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'scala --version'
-                sh 'echo "Hello wordl!'
+                sh 'echo "Hello wordl!"'
             }
         }
     }
