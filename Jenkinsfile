@@ -1,10 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.12.0-alpine3.18' } }
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'scala --version'
-                sh 'echo "Hello wordl!"'
+                bat 'echo "Hello World"'
             }
         }
     }
